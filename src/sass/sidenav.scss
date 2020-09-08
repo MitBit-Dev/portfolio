@@ -1,0 +1,121 @@
+@import 'config.scss';
+
+.header{
+    position: fixed;
+    width: 100%;
+}
+
+.menu-btn{
+    position: absolute;
+    z-index: 3;
+    left: 25px;
+    top: 25px;
+    // cursor: pointer;
+    transition: all 0.5s ease-out;
+
+    .menu-line {
+        width: 28px;
+        height: 3px;
+        margin: 0 0 5px 0;
+        background: #17252a;
+        transition: all 0.5s ease-out; 
+    }
+    &.close {    
+        transform: rotate(180deg);
+
+        .menu-line{
+            background: #fff;
+            &:nth-child(1){
+                transform: rotate(45deg) translate(5px, 5px);
+            }
+            &:nth-child(2){
+                opacity: 0;
+            }
+            &:nth-child(3){
+                transform: rotate(-45deg) translate(7px, -6px);
+            }
+        }
+    }
+    @include lg{
+        display: none;
+    }
+}
+
+.sidenav{
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+    height: 100vh;
+    background-color: #17252a;
+    transform: translateX(-100%);
+    transition: all 0.5s ease-out;
+
+    &.show{
+        transform: translateX(0);
+    }
+    
+    .imgholder{
+        padding-top: 20px;
+        display: flex;
+        justify-content: center;
+
+        img{
+            height: 150px;
+            width: 150px;
+            border: 2px solid white;
+            border-radius: 100px;  
+        }
+    }
+
+    ul{
+        padding-top: 40px;
+        width: 100%;
+        text-align: center;
+        li{
+            padding-top: 10px;
+            display: block;
+            font-size: 25px;
+            line-height: 60px;
+
+            a{
+                color: white;
+                position: relative;
+                font-size: 30px;
+                padding: 7px 13px;
+
+                &:after{
+                    background: none repeat scroll 0 0 transparent;
+                    bottom: 0;
+                    content: "";
+                    display: block;
+                    height: 3px;
+                    left: 50%;
+                    position: absolute;
+                    background: white;
+                    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+                    width: 0;
+                }
+
+                &:hover:after { 
+                    width: 100%; 
+                    left: 0; 
+                }
+
+                &:active, &:hover{
+                    background: none;
+                    visibility: visible;
+                    transform: scaleX(1);
+                }
+            }
+            
+        }
+    }
+
+    @include lg{
+        width: 25%;
+        z-index: 1;
+        height: 100vh;
+        background-color: #17252a;
+        transform: translateX(0);
+    }
+}

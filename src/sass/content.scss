@@ -1,0 +1,445 @@
+@import 'config.scss';
+.content{
+    position: absolute;
+    background-color: #3aafa9;
+    width: 100%;
+    height: 100%;
+
+    @include lg{
+        position: fixed;
+        width: 75%;
+        height: 100vh;
+        top: 0;
+        left: 25%;
+    }
+}
+
+.intro{
+    position: relative;
+    top: 35%;
+    width: 100%;
+
+    @include lg {
+        top: 25%;
+    }
+
+    h2:nth-child(1){
+        padding-left: 1.2rem;
+        font-size: 4rem;
+
+        @include sm{
+            padding-left: 2rem;
+            font-size: 4rem;
+        }
+
+        @include md{
+            padding-left: 4rem;
+            font-size: 4.5rem;
+        }
+
+        @include lg{
+            padding-left: 5rem;
+            font-size: 5.4rem;
+        }
+        
+        & span{
+            color: white;
+        }
+    }
+
+    h2:nth-child(2){
+        padding-left: 1.2rem;
+        font-size: 4rem;
+
+        @include sm{
+            padding-left: 2rem;
+            font-size: 4rem;
+        }
+
+        @include md{
+            padding-left: 4rem;
+            font-size: 4.5rem;
+        }
+
+        @include lg{
+            padding-left: 5rem;
+            font-size: 5.4rem;
+        }
+
+        & span{
+            color: #17252a;
+        }
+    }
+
+    p{
+        padding-left: 1.2rem;
+        font-size: 1.1rem;
+
+        @include sm{
+            padding-left: 2rem;
+            font-size: 1.3rem;
+        }
+
+        @include md{
+            padding-left: 4rem;
+            font-size: 1.6rem;
+        }
+        
+        @include lg{
+            padding-left: 5rem;
+            font-size: 2rem;
+        }
+    }
+    ul{
+        margin-top: 3%;
+        padding-left: 1.2rem;
+        font-size: 1.1rem;
+        color: white;
+        width: 75%;
+        list-style: none;
+        float: left;
+
+        li{
+            display: inline-block; 
+            margin-left: 5%;
+            font-size: 2.5rem;
+
+            a{
+                color: white;
+            }
+        }
+        li:nth-child(1){
+            margin-left: 0;
+        }
+
+        @include sm{
+            padding-left: 2rem;
+            font-size: 1.3rem;
+        }
+
+        @include md{
+            padding-left: 4rem;
+            font-size: 1.6rem;
+        }
+        
+        @include lg{
+            padding-left: 5rem;
+            font-size: 2rem;
+        }
+    }   
+
+    .github{
+        color: #323131;
+    }
+
+    .linkedin{
+        color: #0077b5;
+    }
+
+    .stackoverflow{
+        color: #f48024;
+    }
+}
+
+.aboutme{
+    position: relative;
+    top: 15%;
+    width: 100%;
+
+    @include lg {
+        top: 10%;
+    }
+
+    h2:nth-child(1){
+        padding-left: 1.2rem;
+        font-size: 3rem;
+
+        @include sm{
+            padding-left: 2rem;
+            font-size: 1.5rem;
+        }
+
+        @include md{
+            padding-left: 4rem;
+            font-size: 2.5rem;
+        }
+
+        @include lg{
+            padding-left: 5rem;
+            font-size: 2.5rem;
+        }
+        
+        & span{
+            color: white;
+        }
+    }
+
+    h2:nth-child(2){
+        padding-left: 1.2rem;
+        font-size: 3rem;
+
+        @include sm{
+            padding-left: 2rem;
+            font-size: 2.5rem;
+        }
+
+        @include md{
+            padding-left: 4rem;
+            font-size: 3.5rem;
+        }
+
+        @include lg{
+            padding-left: 5rem;
+            font-size: 3.5rem;
+        }
+
+        & span{
+            color: #17252a;
+        }
+    }
+
+    p{
+        margin-top: 3%;
+        padding-left: 1.2rem;
+        font-size: 1.1rem;
+        color: white;
+        width: 75%;
+        @include sm{
+            padding-left: 2rem;
+            font-size: 1.3rem;
+        }
+
+        @include md{
+            padding-left: 4rem;
+            font-size: 1.6rem;
+        }
+        
+        @include lg{
+            padding-left: 5rem;
+            font-size: 1.5rem;
+        }
+    }
+
+    
+}
+
+.skills{
+    position: relative;
+    top: 15%;
+    width: 100%;
+
+    @include lg {
+        top: 10%;
+    }
+
+    h2:nth-child(1){
+        padding-left: 1.2rem;
+        font-size: 3rem;
+
+        @include sm{
+            padding-left: 2rem;
+            font-size: 1.5rem;
+        }
+
+        @include md{
+            padding-left: 4rem;
+            font-size: 2.5rem;
+        }
+
+        @include lg{
+            padding-left: 5rem;
+            font-size: 2.5rem;
+        }
+        
+        & span{
+            color: white;
+        }
+    }
+
+    h2:nth-child(2){
+        padding-left: 1.2rem;
+        font-size: 3rem;
+
+        @include sm{
+            padding-left: 2rem;
+            font-size: 2.5rem;
+        }
+
+        @include md{
+            padding-left: 4rem;
+            font-size: 3.5rem;
+        }
+
+        @include lg{
+            padding-left: 5rem;
+            font-size: 3.5rem;
+        }
+
+        & span{
+            color: #17252a;
+        }
+    }
+
+    .lang{
+        margin-top: 3%;
+        color: white;
+        padding-left: 1.2rem;
+        // font-size: 3rem;
+
+        @include sm{
+            padding-left: 2rem;
+            // font-size: 2.5rem;
+        }
+
+        @include md{
+            margin-top: 2%;
+            padding-left: 4rem;
+            // font-size: 3.5rem;
+        }
+
+        @include lg{
+            padding-left: 5rem;
+            font-size: 2rem;
+        }
+        
+        .star{
+            margin-left: 2%;
+            color: #17252a;
+        }
+
+        .JS,.html,.css3,.BS4,.sass{
+            font-size: 3rem;
+        }
+        .JS{
+            color: yellow;
+        }
+
+        .html{
+            color: #de4b25;
+        }
+
+        .css3{
+            color: #016db4;
+        }
+
+        .BS4{
+            color: #563d7c;
+        }
+
+        .sass{
+            color: rgb(207, 56, 129);
+        }
+    }
+
+    
+}
+
+.contactme{
+    position: relative;
+    top: 15%;
+    width: 100%;
+
+    @include lg {
+        top: 10%;
+    }
+
+    h2:nth-child(1){
+        padding-left: 1.2rem;
+        font-size: 3rem;
+
+        @include sm{
+            padding-left: 2rem;
+            font-size: 1.5rem;
+        }
+
+        @include md{
+            padding-left: 4rem;
+            font-size: 2.5rem;
+        }
+
+        @include lg{
+            padding-left: 5rem;
+            font-size: 2.5rem;
+        }
+        
+        & span{
+            color: white;
+        }
+    }
+
+    h2:nth-child(2){
+        padding-left: 1.2rem;
+        font-size: 3rem;
+
+        @include sm{
+            padding-left: 2rem;
+            font-size: 2.5rem;
+        }
+
+        @include md{
+            padding-left: 4rem;
+            font-size: 3.5rem;
+        }
+
+        @include lg{
+            padding-left: 5rem;
+            font-size: 3.5rem;
+        }
+
+        & span{
+            color: #17252a;
+        }
+    }
+
+    h2:nth-child(3){
+        margin-top: 5%;
+        color: white;
+        padding-left: 1.2rem;
+        // font-size: 3rem;
+
+        @include sm{
+            padding-left: 2rem;
+            // font-size: 2.5rem;
+        }
+
+        @include md{
+            padding-left: 4rem;
+            // font-size: 3.5rem;
+        }
+
+        @include lg{
+            padding-left: 5rem;
+            font-size: 2rem;
+        }
+
+        & span:nth-child(1){
+            color: #17252a;
+        }
+    }
+
+    h2:nth-child(4){
+        margin-top: 5%;
+        color: white;
+        padding-left: 1.2rem;
+        // font-size: 3rem;
+
+        @include sm{
+            padding-left: 2rem;
+            // font-size: 2.5rem;
+        }
+
+        @include md{
+            padding-left: 4rem;
+            // font-size: 3.5rem;
+        }
+
+        @include lg{
+            padding-left: 5rem;
+            font-size: 2rem;
+        }
+
+        & span:nth-child(1){
+            color: #17252a;
+        }
+    }
+}
